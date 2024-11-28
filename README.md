@@ -40,6 +40,14 @@ Download the dataset given below.
 
 [Test Label Dataset]( https://github.com/arnabberawork/Syntactic-Processing-Assignment/blob/main/test_label )
 
+## Objective
+The objective of this project is to build a custom Named Entity Recognition (NER) model that can extract and categorize diseases and their associated treatments from unstructured medical text data. The solution should:
+
+- Identify diseases and treatments from medical notes or reviews.
+- Extract relevant entities and classify them correctly into categories such as “disease” and “treatment”.
+- Output the extracted information in a structured format (e.g., a table or dictionary), mapping diseases to their respective treatments.
+- Improve the model’s accuracy and performance through feature engineering and model training, using tools like spaCy and CRFsuite.
+
 ## Approach
 
 - Step 1: Workspace set up: Import and Install Necessary Libraries
