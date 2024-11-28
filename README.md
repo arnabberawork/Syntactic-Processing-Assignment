@@ -67,7 +67,6 @@ The objective of this project is to build a custom Named Entity Recognition (NER
 - Spacy: 3.8.2
 
 ## Conclusions
-Conclusion
 In this project, two models were developed to extract diseases and treatments from unstructured medical text:
 
 Model 1 (Using POS as a feature): Achieved an F1 score of 0.907.
@@ -78,10 +77,10 @@ Further Steps/Improvements:
 To enhance the model further, consider exploring the following:
 
 Additional Features: Experiment with adding other features such as word embeddings (e.g., Word2Vec, GloVe) or character-level features (e.g., character n-grams) to capture more semantic information.
+
 Deep Learning Models: Try using more advanced deep learning-based NER models like BERT or BioBERT, which are specifically designed for medical text and might improve accuracy.
+
 Entity Linking: Add a post-processing step for linking the extracted entities to a medical knowledge base (e.g., UMLS) for better contextual understanding.
-Cross-validation: Perform cross-validation to ensure model robustness and avoid overfitting.
-Data Augmentation: Increase the dataset size by generating synthetic data or using augmentation techniques to improve model generalization.
 
 ## Acknowledgements
 
