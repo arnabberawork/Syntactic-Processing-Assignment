@@ -74,10 +74,13 @@ The objective of this project is to build a custom Named Entity Recognition (NER
 In this project, two models were developed to extract diseases and treatments from unstructured medical text:
 
 Model 1 (Using POS as a feature): Achieved an F1 score of 0.907.
+
 Model 2 (Using both POS and Dependency Parsing as features): Achieved an F1 score of 0.904.
+
 Both models performed well, with Model 1 slightly outperforming Model 2. The use of POS tagging and dependency parsing as features contributed positively to the extraction process, demonstrating the effectiveness of these linguistic features in improving NER performance.
 
 Further Steps/Improvements:
+
 To enhance the model further, consider exploring the following:
 
 Additional Features: Experiment with adding other features such as word embeddings (e.g., Word2Vec, GloVe) or character-level features (e.g., character n-grams) to capture more semantic information.
