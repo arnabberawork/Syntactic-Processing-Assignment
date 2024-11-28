@@ -40,7 +40,7 @@ Download the dataset given below.
 
 [Test Label Dataset]( https://github.com/arnabberawork/Syntactic-Processing-Assignment/blob/main/test_label )
 
-## Objective
+## Objectives
 The objective of this project is to build a custom Named Entity Recognition (NER) model that can extract and categorize diseases and their associated treatments from unstructured medical text data. The solution should:
 
 - Identify diseases and treatments from medical notes or reviews.
@@ -67,12 +67,21 @@ The objective of this project is to build a custom Named Entity Recognition (NER
 - Spacy: 3.8.2
 
 ## Conclusions
-Based on the experiments, Approach 3 - Experiment 6 (MobileNetV2 with transfer learning) appears to be the optimal choice for the final model. It offers a well-balanced trade-off between accuracy, loss, and computational efficiency:
+Conclusion
+In this project, two models were developed to extract diseases and treatments from unstructured medical text:
 
-  - High Accuracy and Low Loss: This approach achieved the best results, with a maximum training accuracy of 0.96, maximum validation accuracy of 0.88, minimum training loss of 0.12, and minimum validation loss of 0.21 .
-  - Moderate Parameters: By freezing the initial 100 layers of MobileNetV2, the model maintains a manageable parameter count while effectively leveraging transfer learning.
-  - Efficient Training Time: Global Average Pooling reduces the feature size, resulting in faster training without sacrificing performance.
-Future Work and Improvements: Further experimentation could involve adjusting frame dimensions or exploring more efficient CNN backbones. Testing the model on larger datasets or in real-time scenarios could also enhance robustness and practical applicability.
+Model 1 (Using POS as a feature): Achieved an F1 score of 0.907.
+Model 2 (Using both POS and Dependency Parsing as features): Achieved an F1 score of 0.904.
+Both models performed well, with Model 1 slightly outperforming Model 2. The use of POS tagging and dependency parsing as features contributed positively to the extraction process, demonstrating the effectiveness of these linguistic features in improving NER performance.
+
+Further Steps/Improvements:
+To enhance the model further, consider exploring the following:
+
+Additional Features: Experiment with adding other features such as word embeddings (e.g., Word2Vec, GloVe) or character-level features (e.g., character n-grams) to capture more semantic information.
+Deep Learning Models: Try using more advanced deep learning-based NER models like BERT or BioBERT, which are specifically designed for medical text and might improve accuracy.
+Entity Linking: Add a post-processing step for linking the extracted entities to a medical knowledge base (e.g., UMLS) for better contextual understanding.
+Cross-validation: Perform cross-validation to ensure model robustness and avoid overfitting.
+Data Augmentation: Increase the dataset size by generating synthetic data or using augmentation techniques to improve model generalization.
 
 ## Acknowledgements
 
