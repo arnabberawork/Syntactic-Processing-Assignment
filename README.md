@@ -40,13 +40,17 @@ Download the dataset given below.
 
 [Test Label Dataset]( https://github.com/arnabberawork/Syntactic-Processing-Assignment/blob/main/test_label )
 
+Here, you need to understand that each word in this dataset is provided in a single line. So, first, you need to club all these words together to form the sentences. Moreover, there are blank lines given in the dataset that have been highlighted in the image given above. These blank lines indicate that a new sentence is starting from the next line onwards to the next blank line.
+
 ## Objectives
 The objective of this project is to build a custom Named Entity Recognition (NER) model that can extract and categorize diseases and their associated treatments from unstructured medical text data. The solution should:
 
-- Identify diseases and treatments from medical notes or reviews.
-- Extract relevant entities and classify them correctly into categories such as “disease” and “treatment”.
-- Output the extracted information in a structured format (e.g., a table or dictionary), mapping diseases to their respective treatments.
-- Improve the model’s accuracy and performance through feature engineering and model training, using tools like spaCy and CRFsuite.
+- You need to process and modify the data into sentence format. This step has to be done for the 'train_sent' and ‘train_label’ datasets and for test datasets as well.
+- After that, you need to define the features to build the CRF model.
+- Then, you need to apply these features in each sentence of the train and the test dataset to get the feature values.
+- Once the features are computed, you need to define the target variable and then build the CRF model.
+- Then, you need to perform the evaluation using a test data set.
+- After that, you need to create a dictionary in which diseases are keys and treatments are values.
 
 ## Approach
 
